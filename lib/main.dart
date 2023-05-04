@@ -10,6 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          elevation: 10,
           title: Text('hi, there'),
         ),
         body: Center(
