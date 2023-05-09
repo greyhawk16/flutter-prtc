@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 
-class Player {
-  String name;
-  Player({required this.name});
-}
+const taxAmount = 15;
+const priceAmount = 30;
+var finalPrice = taxAmount + priceAmount;
 
 void main() {
-  var ddg = Player(name: "DDG");
   runApp(App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Color(0xFF181818),
+          backgroundColor: const Color(0xFF181818),
           body: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 80,
                 ),
                 Row(
@@ -30,7 +30,7 @@ class App extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text(
+                        const Text(
                           'Hi, DDG',
                           style: TextStyle(
                             color: Colors.white,
@@ -49,7 +49,7 @@ class App extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 120,
                 ),
                 Text(
@@ -59,10 +59,10 @@ class App extends StatelessWidget {
                     color: Colors.white.withOpacity(0.8),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
+                const SizedBox(
+                  height: 30,
                 ),
-                Text(
+                const Text(
                   '\$5 194 182',
                   style: TextStyle(
                     fontSize: 48,
@@ -70,7 +70,7 @@ class App extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -80,7 +80,7 @@ class App extends StatelessWidget {
                         color: Colors.amber,
                         borderRadius: BorderRadius.circular(45),
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 20,
                           horizontal: 50,
