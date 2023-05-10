@@ -5,7 +5,7 @@ const priceAmount = 30;
 var finalPrice = taxAmount + priceAmount;
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
@@ -34,7 +34,7 @@ class App extends StatelessWidget {
                           'Hi, DDG',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 28,
+                            fontSize: 29,
                             fontWeight: FontWeight.w800,
                           ),
                         ),
